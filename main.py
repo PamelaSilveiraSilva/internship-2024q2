@@ -7,10 +7,10 @@ if __name__ == '__main__':
 
     # Calcula e obtém o DataFrame com os resultados
     df = calc.calc_amount(
-        start_date=date(2010, 1, 1),
-        end_date=date(2021, 3, 1),
+        start_date=date(2000, 1, 1),
+        end_date=date(2022, 3, 31),
         capital=657.43,
-        frequency="daily",
+        frequency="day",
         save_csv=False,
     )
     
