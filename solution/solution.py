@@ -7,6 +7,11 @@ import pandas as pd
 from datetime import datetime, timedelta, date
 
 
+
+max_val_range 
+
+
+
 class SelicCalc:
     def __init__(self):
         self._PATH = os.path.abspath(os.getcwd())
@@ -69,8 +74,8 @@ class SelicCalc:
         best_value = 0
         for i in range(0, length):
             start = df.iloc[i]["data"]
-            end = df.iloc[i+499]["data"]
-            value = self.calc_sum_range(start, end, df)
+            end = df.iloc[i+range_of-1]["data"]
+            value = self.calc_sum(start, end, df)
             if value > best_value:
                 best_start = start
                 best_end = end
